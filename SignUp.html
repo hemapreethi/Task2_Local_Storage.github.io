@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Sign Up with Udacity</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+<style>
+.container a:hover{
+text-decoration:none;
+color:black;
+font-weight:500;
+}
+.container #para{
+font-size:36px;
+font-weight:normal;
+}
+</style>
+<script>
+function check(){
+var log=sessionStorage.getItem("log");
+if(log==1){
+window.location.href="courses.html";
+}
+}
+function RegisterUser(){
+var id='id'+(new Date()).getTime();
+var firstname=document.getElementById('firstname').value;
+var lastname=document.getElementById('lastname').value;
+var email=document.getElementById('email').value;
+var user_password=document.getElementById('password').value;
+if(user_password.length>6){
+len=window.localStorage.length;
+var i=0;
+let flag=false;
+if(len>0){
+for (let j in window.localStorage){
+var d=JSON.parse(localStorage.getItem(j));
+for (let k of [d]){
+if(k.email==email || k.firstname==firstname){
+alert("Username or Password already taken");
+flag=true;
+break;
+}
+}
+if(flag==true){
+break;
+}
+i++;
+if(i==len)
+{
+break;
+}
+}
+}
+if(flag==false){
+var data={};
+data['firstname']=firstname;
+data['lastname']=lastname;
+data['email']=email;
+data['password']=user_password;
+localStorage.setItem("users"+id ,JSON.stringify(data));
+sessionStorage.setItem('log',1);
+sessionStorage.setItem('firstname',firstname);
+window.location.href="courses.html";
+}
+else{
+location.reload();
+alert("Username or email already used");
+}
+
+}
+else{
+alert("Strong password must contain minimum 6 characters");
+location.reload();
+}
+}
+</script>
+</head>
+<body onload="check()">
+
+<div class="container" style="width:40%;">
+<center> <p id="para">Sign Up with your account </p></center>
+<div class="card">
+<div class="card-body">
+<p style="font-size:36px;font-weight:200;text-align:center;">Create your account</p>
+<p style="text-align:center;">Build skills for today, tomorrow, and beyond.<br>Education to future-proof your career.</p>
+<form class="form" action="">
+<br>
+<div class="form-group">
+<input type="firstname" class="form-control" placeholder="firstname" id="firstname" required><br>
+</div>
+<div class="form-group">
+<input type="lastname" class="form-control" placeholder="lastname" id="lastname" required><br>
+</div>
+<div class="form-group">
+<input type="email" class="form-control" placeholder="Email Address" id="email" required><br>
+</div>
+<div class="form-group">
+<input type="password" class="form-control"  placeholder="Enter password" id="password" required><br>
+</div>
+<p>By clicking Sign Up, you agree to our <a href="#">Terms of Use </a>and our <a href="#"> Privacy Policy</a>.</p>
+
+<button type="submit" onclick="RegisterUser()" class="btn btn-primary" style="width:100%;">Sign Up</button>
+</form>      <hr>
+<div><p>Already have an account? <a href="SignIn.html"> click here</a> to Sign In</p></div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

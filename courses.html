@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width:device-width initial-scale:1.0">
+<title>Learn the Latest Tech Skills ; Advance Your Career | Udacity</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Styles.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Myscript.js"></script>
+<script>
+
+    function addname(){
+        document.querySelector('.firstname').innerHTML=sessionStorage.getItem('firstname');
+    }
+    function logout(){
+            sessionStorage.setItem('log',0);
+        window.location.href='index.html';
+    }
+</script>
+</head>
+<body onload="addname()">
+
+<div class="container">
+<aside1 >
+<ul class="nav">
+<li class="nav-item">
+<div class="dropdown">
+<label class="nav-link" type="text" id="menu1" data-toggle="dropdown">Programs&#9662;</label>
+<ul class="dropdown-menu" role="menu" style="padding:20px;width:300px;text-align:left;border-radius:0;">
+<li class="dropright-submenu" ><a class="test"  href="#" title="Programming And Development">
+PROGRAMMING AND DEVELOPMENT</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li><a    class="test" href="#">Intermediate JavaScript</a></li><br>
+<li><a   class="test" href="#">Java Web Developer</a></li><br>
+<li  ><a class="test" href="#">Introduction to Programming</a></li><br>
+<li  ><a  class="test"href="#">iOS Developer</a></li><br>
+<li ><a  class="test"href="#">Front End Web Developer</a></li><br>
+<li  ><a class="test" href="#">Full Stack Web Developer</a></li><br>
+<li  ><a class="test" href="#">React</a></li><br>
+<li  ><a   class="test"href="#">Data Engineer</a></li><br>
+<li ><a  class="test" href="#">Blockchain Developer</a></li><br>
+<li ><a  class="test"href="#">C++</a></li><br>
+<li><a   class="test" href="#">Data Structures and Algorithms</a></li><br>
+<li ><a   class="test"href="#">Android Developer</a></li><br>
+<li  ><a class="test" href="#">Android Basics</a></li><br>
+</ul>
+</li>
+<br>
+
+<li  class="dropright-submenu"><a class="test"   href="#"title="Artificial Intelligent">ARTIFICIAL INTELLIGENCE</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li ><a class="test"  href="#">AI for Healthcare</a></li><br>
+<li ><a class="test"  href="#">Intel® Edge AI for IoT Developers</a></li><br>
+<li ><a class="test" href="#">Machine Learning Engineer</a></li><br>
+<li ><a class="test"  href="#">AI Product Manager</a></li><br>
+<li ><a class="test"  href="#">AI Programming with Python</a></li><br>
+<li><a class="test" href="#">Deep Learning</a></li><br>
+<li><a class="test" href="#">Intro to Machine Learning with PyTorch</a></li><br>
+<li><a class="test"  href="#">Intro to Machine Learning with TensorFlow</a></li><br>
+<li><a class="test"  href="#">Data Structures and Algorithms</a></li><br>
+<li><a class="test"  href="#">Artificial Intelligence for Trading</a></li><br>
+<li><a class="test"  href="#">Data Structures and Algorithms</a></li><br>
+<li><a class="test"  href="#">Computer Vision</a></li><br>
+<li><a class="test"  href="#">Natural Language Processing</a></li><br>
+</ul>
+</li>
+<br>
+<li  class="dropright-submenu"><a class="test" href="#" title="Cloud Computing">CLOUD COMPUTING</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li ><a class="test"  href="#">AWS Cloud Architect</a></li><br>
+<li ><a class="test"  href="#">Cloud Developer</a></li><br>
+<li ><a class="test" href="#">Cloud DevOps Engineer</a></li><br>
+</ul>
+</li><br>
+<li  class="dropright-submenu"><a class="test" href="#" title="Data Science">DATA SCIENCE</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li ><a class="test"  href="#">Establishing Data Infrastructure</a></li><br>
+<li ><a class="test"  href="#">Applying Data Science to Product Management</a></li><br>
+<li ><a class="test" href="#">SQL</a></li><br>
+<li ><a class="test"  href="#">Data Analyst</a></li><br>
+<li ><a class="test"  href="#">Predictive Analytics for Business</a></li><br>
+<li><a class="test" href="#">Data Scientist</a></li><br>
+<li><a class="test" href="#">
+Data Engineer</a></li><br>
+<li><a class="test"  href="#">Marketing Analytics</a></li><br>
+<li><a class="test"  href="#">Business Analytics</a></li><br>
+<li><a class="test"  href="#">Programming for Data Science with Python</a></li><br>
+<li><a class="test"  href="#">Programming for Data Science with R</a></li><br>
+<li><a class="test"  href="#">
+Data Visualization</a></li><br>
+<li><a class="test"  href="#">Data Structures and Algorithms</a></li><br>
+<li><a class="test"  href="#">Data Streaming</a></li><br>
+</ul>
+</li><br>
+<li  class="dropright-submenu"><a  class="test" href="#" title="Business">BUSINESS</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li ><a class="test"  href="#">Monetization Strategy</a></li><br>
+<li ><a class="test"  href="#">Growth Product Manager</a></li><br>
+<li ><a class="test" href="#">Data Product Manager</a></li><br>
+<li ><a class="test"  href="#">Applying Data Science to Product Management</a></li><br>
+<li ><a class="test"  href="#">Establishing Data Infrastructure</a></li><br>
+<li><a class="test" href="#">SQL</a></li><br>
+<li><a class="test" href="#">Product Manager</a></li><br>
+<li><a class="test"  href="#">Predictive Analytics for Business</a></li><br>
+<li><a class="test"  href="#">
+Digital Marketing</a></li><br>
+<li><a class="test"  href="#">Marketing Analytics</a></li><br>
+<li><a class="test"  href="#">AI for Business Leaders</a></li><br>
+<li><a class="test"  href="#">AI Product Manager</a></li><br>
+<li><a class="test"  href="#">Business Analytics</a></li><br>
+</ul>
+</li><br>
+<li  class="dropright-submenu"><a class="test" href="#" title="Autonomous Systems">AUTONOMOUS SYSTEMS</a>
+<ul class="dropdown-menu" style="padding:20px;width:300px;text-align:left;border-radius:0;background-color:white;">
+<h6 class="test"style="color:grey" href="#">NANODEGREE PROGRAMS</h6></li>
+<li ><a class="test"  href="#">Self Driving Car Engineer</a></li><br>
+<li ><a class="test"  href="#">Intro to Self-Driving Cars</a></li><br>
+<li ><a class="test" href="#">Robotics Software Engineer</a></li><br>
+<li ><a class="test"  href="#">C++</a></li><br>
+<li ><a class="test"  href="#">Data Structures and Algorithms</a></li><br>
+<li><a class="test" href="#">Flying Car and Autonomous Flight Engineer</a></li><br>
+<li><a class="test" href="#">Sensor Fusion Engineer</a></li><br>
+</ul>
+</li><br>
+
+<li ><a   href="#" title="Career">CAREER</a></li><br>
+<li ><hr></li>
+<li ><center><button type="submit" class="btn btn-primary">FULL CATALOG</button> </center></li>
+</ul>
+</div>
+<li class="nav-item">
+<div class="dropdown">
+<label class="nav-link" type="text" id="menu1" data-toggle="dropdown">Careers&#9662;
+<span class="caret"></span></label>
+<ul class="dropdown-menu" role="menu" aria-labelledby="menu2"  style="padding:20px;width:250px;text-align:left;border-radius:0;">
+<li role="presentation"><a role="menuitem"  href="#"title="Career Prep">CAREER PREP</a></li><br>
+<li role="presentation"><a role="menuitem"   href="#" title="Student Success">STUDENT SUCCESS</a></li><br>
+<li role="presentation"><a role="menuitem"   href="#" title="Become a Mentor">BECOME A MENTOR</a></li><br>
+<li role="presentation"><a role="menuitem"  href="#" title="Become an Instructor">BECOME AN INSTRUCTOR</a></li>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<div class="dropdown">
+<label class="nav-link" type="text" id="menu1" data-toggle="dropdown">For Enterprise&#9662;
+<span class="caret"></span></label>
+<ul class="dropdown-menu" role="menu" aria-labelledby="menu3"  style="padding:20px;width:300px;text-align:left;border-radius:0;">
+<li role="presentation"><a role="menuitem" href="#" title="Overview">OVERVIEW</a></li><br>
+<li role="presentation"><a role="menuitem"   href="#" title="Our Approach">OUR APPROACH</a></li><br>
+<li role="presentation"><a role="menuitem"  href="#" title="Solution">SOLUTION</a></li><br>
+<li role="presentation"><a role="menuitem"   href="#" title="Resouces">RESOURCES</a></li><br>
+<li role="presentation"><a role="menuitem"  href="#"title="About Us">ABOUT US</a></li>
+</ul>
+</div>
+</li>
+
+<li> <button type="submit" class="btn btn-primary" title="Get Started" onclick="logout()">Logout</button>   </li>
+</ul>
+</aside1>
+<a href="#" class="but"><img src="Images/Udacity Logo.png" alt="udacity" height="100px" > </a><br><br>
+<h2><center>Hi! Explore our schools to find your perfect program</center></h2>
+
+<ul class="courseid" style="list-style-type:none">
+<li id="ds" ><a href="#">DATA SCIENCE</a></li>  <li  id="ai" ><a href="#">ARTIFICIAL INTELLIGENCE</a></li>
+
+<li  id="pro"  ><a href="#">PROGRAMMING</a></li>
+
+<li  id="as"  ><a href="#">AUTONOMOUS SYSTEMS</a></li>
+
+<li  id="cc" ><a href="#">CLOUD COMPUTING</a></li>
+
+
+<li  id="bus" ><a href="#">BUSINESS</a></li>
+
+</ul>
+<br>
+<div class="row3">
+<div class="col31">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column3">
+<a href="#">
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/Established Data Infrastructure.PNG" alt="Jesse" style="width:100%;border-radius:0px;position:relative;" >
+<h5>Established Data Infrastructure</h5>
+
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span style="font-size:12px;color:grey;">4.1(2373) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column3" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Data Analyst.PNG" alt="Jesse" style="width:100%;border-radius:0px;">
+<h5>Data Analyst</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o" style="color: rgb(241, 144, 75);"></span>
+<span style="font-size:12px;color:grey;">4.6(949) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column3" >
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/Data product management.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Data product management</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o" style="color: rgb(241, 144, 75);"></span>
+<span style="font-size:12px;color:grey;">4.8(37863) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p  style="font-size:12px;color:grey;">3 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column3" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/SQL.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>SQL</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span style="font-size:12px;color:grey;">4.3(37863) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">2 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+
+</div>
+<div class="col32">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column31">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7">
+<img   src="Images/Programming for Data Science with Python.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Programming for Data Science with Python</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o" style="color: rgb(241, 144, 75);"></span>
+<span style="font-size:12px;color:grey;">4.5(37863) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 5-10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column31" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Predictive Analysis for Business.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Predictive Analysis for Business</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span style="font-size:12px;color:grey;">4.1(873)Advanced</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column31" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7">
+<img   src="Images/Data Structures and Algorithms.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Data Structures and Algorithms</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o" style="color: rgb(241, 144, 75);"></span>
+<span style="font-size:12px;color:grey;">4.6(55520) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p  style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column31" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Programming for Data Science with R.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Programming for Data Science with R</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span style="font-size:12px;color:grey;">4.0(5000) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">2 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+
+</div>
+<div class="row4">
+<div class="col41">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column4">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/AI Product Manager.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AI Product Manager</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span style="font-size:12px;color:grey;">4.0(2986)Advanced</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">2 month at 5-10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column4" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Deep Reinforcement Learning.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Deep Reinforcement Learning</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column4" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Computer Vision.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Computer Vision</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.2(9438) Beginner</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 months at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column4" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7">
+<img   src="Images/Intro to Machine Learning with PyTorch.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Intro to Machine Learning with PyTorch</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.6(7156) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">2 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col42">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column41">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/AI for Healthcare.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AI for Healthcare</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(95438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 15hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column41" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Intel Edge AI for IOT Developers.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Intel&reg; Edge AI for IOT Developers</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.9(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column41" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/AI for Business Leaders.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AI for Business Leaders</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(56809) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4-8 Weeks at 5hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column41" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7">
+<img   src="Images/Intro to Machine Learning with PyTorch.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Intro to Machine Learning with PyTorch</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(95438) Advanced</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">2 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+
+</div>
+<div class="row5">
+<div class="col51">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column5">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/Intermediate JavaScript.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Intermediate JavaScript</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(3901) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column5" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Java Web Developer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Java Web Developer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(95438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column5" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7">
+<img   src="Images/Cloud Devops Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Cloud Devops Engineer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(95438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column5" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Front End Web Developer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Front End Web Developer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col52">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column51">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7">
+<img   src="Images/Introduction to Programming.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Introduction to Programming</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column51" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7">
+<img   src="Images/React.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>React</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column51" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Full Stack Web Developer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Full Stack Web Developer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column51" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Android Basics.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Android Basics</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(5438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+
+<div class="row6">
+<div class="col61">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column6">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/C++.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>C++</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(5438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column6" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7" >
+
+<img   src="Images/Robotics Software Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Robotics Software Engineer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column6" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Self Driving Car Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Self Driving Car Engineer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9538) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">6 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column6" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Data Structures and Algorithms.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Data Structures and Algorithms</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9538) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col62">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+
+<div class="column61" >
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/Autonomous Flight Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Autonomous Flight Engineer</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9538) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column61" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7" >
+
+<img   src="Images/Sensor Fusion Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Sensor Fusion Engineer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9548) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column61" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7">
+
+<img   src="Images/Intro to Self Driving Cars.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Intro to Self Driving Cars</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(5438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+
+<div class="row7">
+<div class="col71">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column7">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/AWS Cloud Architect.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AWS Cloud Architect</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(954) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column7" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Cloud Devops Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Cloud Devops Engineer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column7" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Cloud Developer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Cloud Developer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-
+spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col72">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column71">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7">
+<img   src="Images/AWS Cloud Architect.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AWS Cloud Architect</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column71" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Cloud Devops Engineer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Cloud Devops Engineer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9548) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column71" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Cloud Developer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Cloud Developer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="row8">
+<div class="col81">
+<center>
+<a href="#"><i class="fa fa-angle-left" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column8">
+<a href="#">
+<div class="card" >
+<div class="card-body7" >
+
+<img   src="Images/Established Data Infrastructure.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Established Data Infrastructure</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(5438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column8" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Monetization Strategy.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Monetization Strategy</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9543) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column8" >
+<a href="#">
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Growth Product Manager.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Growth Product Manager</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column8" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Digital Marketing.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Digital Marketing</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9548) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="col82">
+<center>
+<a href="#"><i class="fa fa-angle-right" aria-hidden="true" style="font-size:36px;line-height: 200px;"></i></a></center>
+</div>
+<div class="column81">
+<a href="#">
+
+<div class="card" >
+<div class="card-body7" >
+<img   src="Images/Marketing Analyst.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Marketing Analyst</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9538) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div></div>
+</a>
+</div>
+<div class="column81" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/UX Designer.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>UX Designer</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">1 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column81" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/Predictive Analysis for Business.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>Predictive Analysis for Business</h5>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(9538) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">4 month at 10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+<div class="column81" >
+<a href="#">
+
+<div class="card" >
+
+<div class="card-body7" >
+<img   src="Images/AI Product Manager.PNG" alt="Jesse" style="width:100%;border-radius:0px;" >
+<h5>AI Product Manager</h5><br>
+<span class="fa fa-star checked" style="padding-left:10px;"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-o"style="color: rgb(241, 144, 75); "></span>
+<span style="font-size:12px;color:grey;">4.3(5438) Intermediate</span>
+<h4 style="font-size:16px;color:grey;  letter-spacing: 2px;">ESTIMATED TIME</h4>
+<p style="font-size:12px;color:grey;">3 month at 5-10hrs/week</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div>
+<aside >
+<ul class="t104" style="list-style-type:none;">
+<li><a href="https://www.facebook.com/Udacity" target="_blank" title="Facebook"><i class="fa fa-facebook" style="color:grey;padding-left:10px;font-size:24px;"></i></a></li>
+<li><a href="https://twitter.com/udacity" target="_blank" title="Twitter"><i class="fa fa-twitter" style="color:grey;padding-left:10px;font-size:24px;"></i></a></li>
+<li><a href="https://medium.com/udacity" target="_blank" title="Medium"><i class="fa fa-medium" style="color:grey;padding-left:10px;font-size:24px;"></i></a></li>
+<li><a href="https://www.linkedin.com/company/udacity" target="_blank" title="Linkedin"><i class="fa fa-linkedin" style="color:grey;padding-left:10px;font-size:24px;"></i></a></li>
+<li><a href="https://www.instagram.com/udacity/" target="_blank" title="Instagam"><i class="fa fa-instagram" style="color:grey;padding-left:10px;font-size:24px;"></i></a></li>
+</ul>
+</aside>
+<hr>
+<ul class="t104" style="list-style-type:none">
+<li ><a href="#" style="text-decoration:none;color:grey;"> &#xa9; 2011&#8208;2020 Udacity, Inc. </a></li>
+<li ><a href="#" style="text-decoration:none;color:grey;" >Legal &amp; Privacy</a></li>
+<li ><a href="#" style="text-decoration:none;color:grey;">Site Map</a></li>
+</ul><center>
+<p style="font-size:10px"><q>Nanodegree</q> is a registered trademark of Udacity. &#xa9;2011&#8208;2020 Udacity, Inc.</p>
+<p style="font-size:10px">Udacity is not an accredited university and we don't confer traditional degrees. Udacity Nanodegree programs represent collaborations with our industry partners who help us develop our content<br> and who hire many of our program graduates.</p></center>
+</div>
+
+
+</body>
+</html>

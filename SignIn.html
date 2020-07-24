@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Sign In with Udacity</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+.container a:hover{
+text-decoration:none;
+color:black;
+font-weight:500;
+}
+.container #para{
+font-size:36px;
+font-weight:normal;
+}
+
+</style>
+<script>
+function check(){
+var log=sessionStorage.getItem("log");
+if(log==1){
+window.location.href="courses.html";
+}
+}
+function ValidateUser(){
+var firstname=document.getElementById('firstname').value;
+var user_password=document.getElementById('password').value;
+if(user_password.length>6){
+len=window.localStorage.length;
+var k=0;
+let flag=false;
+var name;
+if(len>0){
+for (let i in window.localStorage){
+var d=JSON.parse(localStorage.getItem(i));
+for (let item of [d]){
+if((item.email==firstname && item.password==user_password)||(item.firstname==firstname && item.password==user_password)) {
+flag=true;
+name=item.firstname;
+break;
+}
+}
+
+if(flag==true){
+break;
+}
+k++;
+if(k==len)
+break;
+}
+}
+if(flag==true){
+window.location.href="courses.html";
+sessionStorage.setItem('log',1);
+sessionStorage.setItem('firstname',name);
+
+}
+else{
+alert("Username or Password is invalid");
+location.reload();
+
+}
+}
+else{
+alert("Strong password must contain minimum 7 characters");
+location.reload();
+
+}
+
+}
+
+
+</script>
+</head>
+<body onload="check()">
+
+<div class="container" Style="width:40%;">
+<center> <p id="para">Sign in to your account </p></center>
+<div class="card">
+<div class="card-body">
+<form class="form" action="" id="myform">
+<br>
+<div class="form-group">
+<input type="name" class="form-control"  placeholder="Username" id="firstname" required><br>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" placeholder="Enter password" id="password" required><br>
+</div>
+<p>By clicking Sign In, you agree to our <a href="#">Terms of Use </a>and our <a href="#"> Privacy Policy</a>.</p>
+<button type="submit" onclick="ValidateUser()"class="btn btn-primary" style="width:100%;">Sign In</button>
+
+</form> <hr>
+<div ><center><p>create an account? <a href="SignUp.html"> click here</a> to Sign up</p></center></div>
+</div>
+</div>
+</div>
+</body>
+</html>
